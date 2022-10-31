@@ -346,8 +346,8 @@ nav.show div.icon-close {
 
 #about .text {
   margin-left: 1.5rem;
-  margin-right: -5rem;
-  margin-left: 48rem;
+  margin-right: -2rem;
+  margin-left: 41rem;
   text-align: justify;  
   }
   
@@ -355,17 +355,17 @@ nav.show div.icon-close {
 .button {
   font-family: inherit;
   cursor: pointer;
-}
+  }
 
 .button {
   margin: 0.5rem;
-  padding: 1rem 1rem;
+  padding: 5rem 5rem;
   background: rgb(182, 181, 181);
   color: var(--text-color-light);
   display: inline-table;
-  border-radius: 0.7rem;
-  width: 9rem;
-  height: 5rem;
+  border-radius: 0.7rem; 
+  width: 0.5rem;
+  color: black;
 }
 
 .button i {
@@ -374,9 +374,22 @@ nav.show div.icon-close {
   margin-top: 0.7rem;
   font-size: 2.5rem;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
 }
 
+
+#dumpsters .text {
+  text-align: center;
+  margin-top: -5rem;
+  }
+
+#dumpsters .text p {
+  margin-left: 23rem;
+  margin-right: 20rem;
+  text-align: justify;
+  margin-block: 5rem;
+  margin-top: 1rem;
+}
 
 /*====  FOOTER ============================ */
 footer {
@@ -523,17 +536,6 @@ footer .social a:hover {
     margin: 0 auto;
     grid-auto-flow: column;
   }
-
-  /* services */
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .card {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   
   /* footer */
   footer.section {
