@@ -304,20 +304,20 @@ nav.show div.icon-close {
 }
 
 /*====  PRESENTATION ============================ */
-#about {
+#presentation {
   background: white;
 }
 
-#about .container {
+#presentation .container {
   margin: 0;
 }
 
-#about .image {
+#presentation .image {
   position: absolute;
   top: 55rem;
 }
 
-#about .image::before {
+#presentation .image::before {
   content: '';
   height: 100%;
   width: 50%;
@@ -328,23 +328,23 @@ nav.show div.icon-close {
   z-index: 0;
 }
 
-#about .image img {
+#presentation .image img {
   position: relative;
   width: 50%;
   height: 80%;
 }
 
-#about .image img,
-#about .image::before {
+#presentation .image img,
+#presentation .image::before {
   border-radius: 0.25rem;
 }
 
-#about .text h2 {
+#presentation .text h2 {
   text-align: center;  
   }
 
 
-#about .text {
+#presentation .text {
   margin-left: 1.5rem;
   margin-right: -2rem;
   margin-left: 45rem;
@@ -393,7 +393,7 @@ nav.show div.icon-close {
 #dumpsters .text p {
   margin-left: 25rem;
   margin-right: 28rem;
-  text-align: center;
+  text-align: justify;
   margin-block: 5rem;
   margin-top: 1rem;
 }
@@ -539,7 +539,7 @@ footer .social a:hover {
   }
 
   /* about */
-  #about .container {
+  #presentation .container {
     margin: 0 auto;
     grid-auto-flow: column;
   }
@@ -568,4 +568,3 @@ footer .social a:hover {
   }
 }
 /* medium devices: 767 > */
-
