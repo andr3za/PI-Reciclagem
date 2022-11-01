@@ -398,6 +398,144 @@ nav.show div.icon-close {
   margin-top: 1rem;
 }
 
+
+/*====  QUIZ1 ============================ */
+#quiz1 {
+  overflow: hidden;
+}
+
+#quiz1 .container {
+  margin: 0;
+}
+
+#quiz1 .image {
+  position: absolute;
+  top: 135rem;
+}
+
+#quiz1 .image::before {
+  content: '';
+  height: 110%;
+  width: 105%;
+  background: rgb(19, 182, 19);
+  position: absolute;
+  top: -22.8%;
+  left: 102%;
+  z-index: 0;
+}
+
+#quiz1 .image img {
+  position: relative;
+  right: -35rem;
+  width: 100%;
+  height: 95%;
+}
+
+#quiz1 .image img,
+#quiz1 .image::before {
+  border-radius: 0.25rem;
+}
+
+#quiz1 .text {
+  margin-left: 8rem;
+  margin-right: 2.5rem;
+  text-align: justify;
+}
+
+#quiz1 .text h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  }
+
+#quiz1 .text p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.buttonquiz1 {
+  background-color: rgb(19, 182, 19);
+  color: var(--text-color-light);
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+ 
+  font: 500 1rem var(--body-font);
+  transition: background 0.3s;
+}
+
+.buttonquiz1:hover {
+  background: rgb(22, 243, 22);
+}
+
+
+/*====QUIZ2============================ */
+#quiz2 {
+  background: white;
+}
+
+#quiz2 .container {
+  margin: 0;
+}
+
+#quiz2 .image {
+  position: absolute;
+  
+}
+
+#quiz2 .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: rgb(19, 182, 19);
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  z-index: 0;
+}
+
+#quiz2 .image img {
+  position: relative;
+  width: 105%;
+  height: 105%;
+}
+
+#quiz2 .image img,
+#quiz2 .image::before {
+  border-radius: 0.25rem;
+}
+
+#quiz2 .text h2 {
+  text-align: center;  
+  }
+
+#quiz2 .text {
+  margin-left: 1.5rem;
+  margin-right: -2rem;
+  margin-left: 45rem;
+  text-align: justify;  
+  }
+  
+.buttonquiz2 {
+    background-color: rgb(19, 182, 19);
+    color: var(--text-color-light);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.25rem;
+    
+    font: 500 1rem var(--body-font);
+    transition: background 0.3s;
+  }
+  
+ .buttonquiz2:hover {
+    background: rgb(22, 243, 22);
+  }
+
+
+
 /*====  FOOTER ============================ */
 footer {
   background: rgb(80, 223, 80);;
@@ -538,8 +676,31 @@ footer .social a:hover {
     text-align: left;
   }
 
-  /* about */
+  /* presentation */
   #presentation .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+  
+   /* quiz1 */
+  #quiz .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #quiz1 .image {
+    order: 1;
+  }
+
+  #quiz1 .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+  /* quiz2 */
+  #quiz2 .container {
     margin: 0 auto;
     grid-auto-flow: column;
   }

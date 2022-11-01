@@ -42,7 +42,8 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal(
   `#home .image, #home .text,
   #presentation .image, #presentation .text, #presentation .image img,
-  #dumpsters header, #dumpsters .text,
+  #dumpsters header, #dumpsters .text, #quiz1 .image, #quiz1 .text, 
+  buttonquiz1, #quiz2 .image, #quiz2 .text, buttonquiz2,
   #button, footer .brand, footer .social
   `,
   { interval: 100 }
