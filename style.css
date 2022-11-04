@@ -360,26 +360,78 @@ nav.show div.icon-close {
 .button {
   margin: 0.5rem;
   padding: 5rem 5rem;
-  background: rgb(182, 181, 181);
+  font-size: 1.2rem;
   color: var(--text-color-light);
   display: inline-table;
   border-radius: 0.7rem; 
   width: 0.5rem;
   color: black;
   font-family: sans-serif;
+  transition: background 0.3s;
 }
 
-.button:hover {
-  
-  box-shadow: 0 2px 3px 777;
-  transform: translateY(-15px);
+
+
+ #buttonb1{
+ background-color: rgb(181, 240, 181); 
+ border: 5px solid; 
+ border-color: green; 
+ border-radius: 35px;
+transition-duration: 0.5s;
  }
+ #buttonb1:hover{
+  background-color: rgb(50, 179, 50);
+  }
+
+  #buttonb2{
+    background-color:rgb(245, 245, 185); 
+    border: 5px solid; 
+    border-color: yellow; 
+    border-radius: 35px;
+   transition-duration: 0.5s;
+    }
+    #buttonb2:hover{
+     background-color: rgb(255, 255, 68);
+     }
+
+     #buttonb3{
+      background-color: rgb(238, 181, 181); 
+      border: 5px solid; 
+      border-color: red; 
+      border-radius: 35px;
+     transition-duration: 0.5s;
+      }
+      #buttonb3:hover{
+       background-color: rgb(255, 68, 68);
+       }
+
+       #buttonb4{
+        background-color:rgb(177, 177, 238); 
+        border: 5px solid; 
+        border-color: blue; 
+        border-radius: 35px;
+       transition-duration: 0.5s;
+        }
+        #buttonb4:hover{
+         background-color: rgb(81, 81, 255);
+         }
+
+         #buttonb5{
+          background-color:rgba(204, 134, 101, 0.918); 
+          border: 5px solid; 
+          border-color: rgba(129, 64, 34, 0.918); 
+          border-radius: 35px;
+         transition-duration: 0.5s;
+          }
+          #buttonb5:hover{
+           background-color: rgba(148, 75, 42, 0.918);
+           }
 
 .button i {
   display: block;
   margin-bottom: 0.5rem;
   margin-top: 0.7rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-left: auto;
   margin-right: auto;
   }
@@ -396,6 +448,10 @@ nav.show div.icon-close {
   text-align: justify;
   margin-block: 5rem;
   margin-top: 1rem;
+}
+
+.buttonb1:hover {
+  background-color: red;
 }
 
 
@@ -465,10 +521,6 @@ nav.show div.icon-close {
   transition: background 0.3s;
 }
 
-.buttonquiz1:hover {
-  background: rgb(22, 243, 22);
-}
-
 
 /*====QUIZ2============================ */
 #quiz2 {
@@ -533,6 +585,73 @@ nav.show div.icon-close {
  .buttonquiz2:hover {
     background: rgb(22, 243, 22);
   }
+
+
+/*====  QUIZ3 ============================ */
+#quiz3 {
+  overflow: hidden;
+}
+
+#quiz3 .container {
+  margin: 0;
+}
+
+#quiz3 .image {
+  position: relative;
+}
+
+#quiz3 .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: rgb(19, 182, 19);
+  position: absolute;
+  top: -18.8%;
+  left: 3.7%;
+  z-index: 0;
+}
+
+#quiz3 .image img {
+  position: relative;
+  right: 2.93rem;
+}
+
+#quiz3 .image img,
+#quiz3 .image::before {
+  border-radius: 0.25rem;
+}
+
+#quiz3 .text {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  text-align: center;
+}
+
+#quiz3 .text h1 {
+  margin-bottom: 1rem;
+  }
+
+#quiz3 .text p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.buttonquiz3 {
+  background-color: rgb(19, 182, 19);
+  color: var(--text-color-light);
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+ 
+  font: 500 1rem var(--body-font);
+  transition: background 0.3s;
+}
+
+.buttonquiz1:hover {
+  background: rgb(22, 243, 22);
+}
 
 
 
@@ -704,10 +823,27 @@ footer .social a:hover {
     margin: 0 auto;
     grid-auto-flow: column;
   }
+
+  /* quiz3 */
+  #quiz3 .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #quiz3 .image {
+    order: 1;
+  }
+
+  #quiz3 .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
   
   /* footer */
   footer.section {
-    padding: 3.75rem 0;
+    padding: 2rem 0;
   }
 
   footer .container {
