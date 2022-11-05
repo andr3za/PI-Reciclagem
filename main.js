@@ -2,6 +2,31 @@
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("buttonb1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 for (const element of toggle) {
   element.addEventListener('click', function () {
     nav.classList.toggle('show')
@@ -44,7 +69,7 @@ scrollReveal.reveal(
   #presentation .image, #presentation .text, #presentation .image img,
   #dumpsters header, #dumpsters .text, #quiz1 .image, #quiz1 .text, 
   #buttonquiz1, #quiz2 .image, #quiz2 .text, #buttonquiz2, #quiz3 .image, #quiz3 .text, #buttonquiz3,
-  #button, footer .brand, footer .social,#buttonb1,#buttonb2,#buttonb3,#buttonb4,#buttonb5
+  #button, footer .brand, footer .social
   `,
   { interval: 100 }
 )
