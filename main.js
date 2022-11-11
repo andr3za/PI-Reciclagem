@@ -51,7 +51,7 @@ btn3.onclick = function() {
   modalContent.style.border = "8px solid red";
   tituloModal.innerText = "LIXEIRA VERMELHA"
   tituloModal.style.color = "red";
-  paragrafoModal.innerText = "Red"
+  paragrafoModal.innerText = "A lixeira vermelha serve para o descarte de materiais de plástico. Nela você poderá descartar sacos plásticos, como embalagens de plástico, garrafas PET, canetas, escovas de dente, entre outros. Para checar se o material é realmente plástico e pode ser reciclado, basta checar se tem a sigla 6PS no produto!"
   imgModal.src = "img/lixeira%20vermelha.png"
 }
 
@@ -62,7 +62,7 @@ btn4.onclick = function() {
   modalContent.style.border = "8px solid #296d98";
   tituloModal.innerText = "LIXEIRA AZUL"
   tituloModal.style.color = "#296d98";
-  paragrafoModal.innerText = "#Blue";
+  paragrafoModal.innerText = "A lixeira azul serve para o descarte de papéis. Nela devem ser descartadas todos os lixos que envolvam esse material, como papelão, jornais, caixas, revistas, papeis em geral, embalagens longa vida, entre outros.";
   imgModal.src = "img/lixeira%20azul.png"
 }
 
@@ -73,7 +73,7 @@ btn5.onclick = function() {
   modalContent.style.border = "8px solid #9e6847";
   tituloModal.innerText = "LIXEIRA MARROM"
   tituloModal.style.color = "#9e6847";
-  paragrafoModal.innerText = "brown";
+  paragrafoModal.innerText = "A lixeira marrom serve para o descarte de resíduos orgânicos, de origem animal ou vegetal, como restos de comida, cascas de frutas e folhas secas. Esta é uma reciclagem que pode ser feita compostagem e serve como adubo natural para todos os tipos de plantas.";
   imgModal.src = "img/lixeira%20marrom.png"
 }
 
@@ -178,3 +178,5 @@ window.addEventListener('scroll', function () {
   backToTop()
   activateMenuAtCurrentSection()
 })
+
+/* quiz */

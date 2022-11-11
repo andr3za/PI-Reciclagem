@@ -420,7 +420,7 @@ nav.show div.icon-close {
 
 #buttonb5{
   background-color:rgba(204, 134, 101, 0.918); 
-  order: 5px solid; 
+  border: 5px solid; 
   border-color: rgba(129, 64, 34, 0.918); 
   border-radius: 35px;
   transition-duration: 0.5s;
