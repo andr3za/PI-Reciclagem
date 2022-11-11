@@ -6,6 +6,17 @@ var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("buttonb1");
+var btn2 = document.getElementById("buttonb2");
+var btn3 = document.getElementById("buttonb3");
+var btn4 = document.getElementById("buttonb4");
+var btn5 = document.getElementById("buttonb5");
+
+var modalHeader = document.getElementById("modal-header")
+var modalFooter = document.getElementById("modal-footer")
+var paragrafoModal = document.getElementById("paragrafo-modal")
+var tituloModal = document.getElementById("titulo-modal")
+var imgModal = document.getElementById("imagem-modal")
+var modalContent = document.getElementById("modal-content")
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -13,6 +24,57 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
+  modalHeader.style.backgroundColor = "#5cb85c";
+  modalFooter.style.backgroundColor = "#5cb85c";
+  modalContent.style.border = "8px solid green";
+  tituloModal.innerText = "LIXEIRA VERDE"
+  tituloModal.style.color = "green";
+  paragrafoModal.innerText = "A lixeira verde serve para os resíduos de vidro, como garrafas, copos, embalagens de vidro, entre outros. É muito importante destacar os materiais mais perigosos e cortantes em uma lixeira específica, assim o lixeiro saberá que precisa tomar cuidados especiais na hora da coleta."
+  imgModal.src = "img/lixeira%20verde.png"
+}
+
+btn2.onclick = function() {
+  modal.style.display = "block";
+  modalHeader.style.backgroundColor = "#ffed5f";
+  modalFooter.style.backgroundColor = "#ffed5f";
+  modalContent.style.border = "8px solid #ffcc00";
+  tituloModal.innerText = "LIXEIRA AMARELA"
+  tituloModal.style.color = "#ffcc00";
+  paragrafoModal.innerText = "A lixeira verde serve para os resíduos de vidro. Exemplos: Garrafas, copos e embalagens de vidro...."
+  imgModal.src = "img/lixeira%20amarela.png"
+}
+
+btn3.onclick = function() {
+  modal.style.display = "block";
+  modalHeader.style.backgroundColor =  "#fa7d74";
+  modalFooter.style.backgroundColor = "#fa7d74";
+  modalContent.style.border = "8px solid red";
+  tituloModal.innerText = "LIXEIRA VERMELHA"
+  tituloModal.style.color = "red";
+  paragrafoModal.innerText = "Red"
+  imgModal.src = "img/lixeira%20vermelha.png"
+}
+
+btn4.onclick = function() {
+  modal.style.display = "block";
+  modalHeader.style.backgroundColor = "#31afcc";
+  modalFooter.style.backgroundColor = "#31afcc";
+  modalContent.style.border = "8px solid #296d98";
+  tituloModal.innerText = "LIXEIRA AZUL"
+  tituloModal.style.color = "#296d98";
+  paragrafoModal.innerText = "#Blue";
+  imgModal.src = "img/lixeira%20azul.png"
+}
+
+btn5.onclick = function() {
+  modal.style.display = "block";
+  modalHeader.style.backgroundColor = "#cfa586";
+  modalFooter.style.backgroundColor = "#cfa586";
+  modalContent.style.border = "8px solid #9e6847";
+  tituloModal.innerText = "LIXEIRA MARROM"
+  tituloModal.style.color = "#9e6847";
+  paragrafoModal.innerText = "brown";
+  imgModal.src = "img/lixeira%20marrom.png"
 }
 
 // When the user clicks on <span> (x), close the modal

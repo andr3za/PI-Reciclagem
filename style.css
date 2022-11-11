@@ -370,60 +370,65 @@ nav.show div.icon-close {
   transition: background 0.3s;
 }
 
- #buttonb1{
+#buttonb1{
  background-color: rgb(181, 240, 181); 
  border: 5px solid; 
  border-color: green; 
  border-radius: 35px;
-transition-duration: 0.5s;
+ transition-duration: 0.5s;
  }
- #buttonb1:hover{
+
+#buttonb1:hover{
   background-color: rgb(50, 179, 50);
   }
 
-  #buttonb2{
-    background-color:rgb(245, 245, 185); 
-    border: 5px solid; 
-    border-color: yellow; 
-    border-radius: 35px;
-   transition-duration: 0.5s;
-    }
-    #buttonb2:hover{
-     background-color: rgb(255, 255, 68);
-     }
+#buttonb2{
+  background-color:rgb(245, 245, 185); 
+  border: 5px solid; 
+  border-color: yellow; 
+  border-radius: 35px;
+  transition-duration: 0.5s;
+  }
 
-     #buttonb3{
-      background-color: rgb(238, 181, 181); 
-      border: 5px solid; 
-      border-color: red; 
-      border-radius: 35px;
-     transition-duration: 0.5s;
-      }
-      #buttonb3:hover{
-       background-color: rgb(255, 68, 68);
-       }
+#buttonb2:hover{
+  background-color: rgb(255, 255, 68);
+  }
 
-       #buttonb4{
-        background-color:rgb(177, 177, 238); 
-        border: 5px solid; 
-        border-color: blue; 
-        border-radius: 35px;
-       transition-duration: 0.5s;
-        }
-        #buttonb4:hover{
-         background-color: rgb(81, 81, 255);
-         }
+#buttonb3{
+  background-color: rgb(238, 181, 181); 
+  border: 5px solid; 
+  border-color: red; 
+  border-radius: 35px;
+  transition-duration: 0.5s;
+  }
 
-         #buttonb5{
-          background-color:rgba(204, 134, 101, 0.918); 
-          border: 5px solid; 
-          border-color: rgba(129, 64, 34, 0.918); 
-          border-radius: 35px;
-         transition-duration: 0.5s;
-          }
-          #buttonb5:hover{
-           background-color: rgba(148, 75, 42, 0.918);
-           }
+#buttonb3:hover{
+  background-color: rgb(255, 68, 68);
+  }
+
+#buttonb4{
+  background-color:rgb(177, 177, 238); 
+  border: 5px solid; 
+  border-color: blue; 
+  border-radius: 35px;
+  transition-duration: 0.5s;
+  }
+
+#buttonb4:hover{
+  background-color: rgb(81, 81, 255);
+  }
+
+#buttonb5{
+  background-color:rgba(204, 134, 101, 0.918); 
+  order: 5px solid; 
+  border-color: rgba(129, 64, 34, 0.918); 
+  border-radius: 35px;
+  transition-duration: 0.5s;
+  }
+
+#buttonb5:hover{
+  background-color: rgba(148, 75, 42, 0.918);
+  }
 
 .button i {
   display: block;
@@ -452,10 +457,7 @@ transition-duration: 0.5s;
   background-color: red;
 }
 
-
-
-/* Modal Botão Verde */
-
+/*====  MODAL ============================ */
 
 .modal {
   display: none; /* Hidden by default */
@@ -468,8 +470,7 @@ transition-duration: 0.5s;
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */  
 }
 
 /* Modal Content */
@@ -478,7 +479,7 @@ transition-duration: 0.5s;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  border: 1px solid #888;
+  border: 8px solid green;
   width: 60%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
@@ -514,7 +515,7 @@ transition-duration: 0.5s;
 }
 
 .modal-header {
-  padding: 2px 16px;
+  padding: 0px 16px;
   background-color: #5cb85c;
   color: white;
 }
@@ -528,14 +529,12 @@ transition-duration: 0.5s;
 }
 
 .modal img {
-height: 40rem;
-width: 68rem;
-position: relative;
-display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-
+ height: 40rem;
+ width: 68rem;
+ position: relative;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 .modal .text p{
