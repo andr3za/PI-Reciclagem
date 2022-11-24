@@ -40,7 +40,7 @@ btn2.onclick = function() {
   modalContent.style.border = "8px solid #ffcc00";
   tituloModal.innerText = "LIXEIRA AMARELA"
   tituloModal.style.color = "#ffcc00";
-  paragrafoModal.innerText = "A lixeira amarela serve para o descarte dos resíduos de metal, como Tampinhas de garrafas, lacres de latinhas, latas de refrigerantes e cervejas, entre outros.. É importante que estes materiais sejam sempre higienizados para a reciclagem."
+  paragrafoModal.innerText = "A lixeira amarela serve para o descarte dos resíduos de metal, como tampinhas de garrafas, lacres de latinhas, latas de refrigerantes e cervejas, entre outros. É importante que estes materiais sejam sempre higienizados para a reciclagem."
   imgModal.src = "img/lixeira%20amarela.png"
 }
 
