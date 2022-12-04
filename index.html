@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <!-- PAGE INFO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Início</title>
+
+  <!-- Icones -->
+  <link rel="stylesheet" href="assets/fonts/style.css" />
+
+  <link rel="icon" type="image/png" href="img/recicle.png">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- STYLES -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <header id="header">
+    <nav class="container">
+      <a class="logo" href="#">Recicle<span>fácil</span>.</a>
+      <!-- menu -->
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#home">Início</a></li>
+          <li><a class="title" href="#presentation">Reciclar</a></li>
+          <li><a class="title" href="#dumpsters">Lixeiras seletivas</a></li>
+          <li><a class="title" href="#quiz1">Quiz: Escolha a lixeira correta</a></li>
+          <li><a class="title" href="#quiz2">Quiz: Quem sou eu?</a></li>
+          <li><a class="title" href="#quiz3">Quiz: É reciclável ou não?</a></li>
+        </ul>
+      </div>
+      <!-- /menu -->
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="section" id="home">
+      <div class="container grid">
+        <div class="image">
+          <img src="https://i.ytimg.com/vi/IfJ1z6ahgzk/maxresdefault.jpg"
+            alt="Caminhão reciclável com as lixeiras coloridas de coleta seletiva" />
+        </div>
+        <div class="text">
+          <h1 class="title">Você sabe o que é a coleta seletiva de lixo?</h1>
+
+          <p>
+            Ela consiste na separação e no recolhimento de todo o lixo seco descartado por empresas, escolas e até mesmo
+            por nós, em nossas casas. Fazendo isso, todo o lixo que pode ser reaproveitado é separado do lixo orgânico.
+            Os materiais recicláveis são separados em plástico, papel, vidro e metais.
+          </p>          
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-1"></div>
+
+    <!-- PRESENTATION == -->
+    <section class="section" id="presentation">
+      <div class="container grid">
+        <div class="image">
+          <img src="https://i.ytimg.com/vi/6G6f2stDCN0/maxresdefault.jpg"
+            alt="Planeta envolvido pelo simbolo da reciclagem" />
+        </div>
+        <div class="text">
+          <h2 class="title">Porque reciclar?</h2>
+          <p>
+            Saber reciclar todos os resíduos, respeitar o meio ambiente, preservar a natureza, ajudando a diminuir a
+            poluição dos solos e dos rios são atitudes necessárias para salvar e conservar nosso planeta.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-2"></div>
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content green-->
+      <div id="modal-content" class="modal-content">
+        <div id="modal-header" class="modal-header">
+          <span class="close">&times;</span>          
+        </div>
+        <div class="modal-body"> 
+          <div class="text">         
+          <h2 id="titulo-modal" class="title">LIXEIRA VERDE:</h2>
+          <p id="paragrafo-modal" class="subtitle">         
+          A lixeira verde serve para os resíduos de vidro. Exemplos: Garrafas, copos e embalagens de vidro....
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi officiis quibusdam provident ratione non reprehenderit repellendus voluptates aut necessitatibus esse, incidunt, consectetur eveniet rem quos recusandae deserunt temporibus natus veniam.
+         </p>          
+        </div>
+        <div id="modal-footer" class="modal-footer">
+          <img id="imagem-modal" src="img/lixeira verde.png"
+            alt="Imagem lixeira verde" />
+        </div>
+      </div>
+     </div>
+    </div>
+   
+
+    <!-- LIXEIRAS -->
+    <section class="section" id="dumpsters">
+      <div class="container grid">
+      </div>
+      <div class="text">
+        <h2 class="title">Lixeiras Seletivas</h2>
+        <p class="subtitle">
+          Vou te ensinar a separar os resíduos corretamente, para que eles possam ser reciclados. Selecione uma lixeira
+          e aprenda o que deve ser descartado nela.
+        </p>
+
+        <a id="buttonb1" class="button" href="#"><i class="fa-regular fa-trash-can"></i> Lixeira Verde</a>
+        <a id="buttonb2" class="button" href="#"><i class="fa-regular fa-trash-can"></i>Lixeira Amarela</a>
+        <a id="buttonb3" class="button" href="#"><i class="fa-regular fa-trash-can"></i>Lixeira Vermelha</a>
+        <a id="buttonb4" class="button" href="#"><i class="fa-regular fa-trash-can"></i>Lixeira Azul</a>
+        <a id="buttonb5" class="button" href="#"><i class="fa-regular fa-trash-can"></i>Lixeira Marrom</a>
+
+      </div>
+      </div>
+    </section>
+
+    <div class="divider-1"></div>
+
+    <!-- Quiz1 -->
+    <section class="section" id="quiz1">
+
+      <div class="container grid">
+        <div class="image">
+          <img
+            src="https://diskentulhojundiai.com.br/wp-content/uploads/2019/11/lixeiras-coleta-seletiva.jpg"
+            alt="home em dúvida em qual lixeira jogar o lixo"
+          />
+        </div>
+        <div class="text">
+          <h1 class="title">Quiz: Escolha a lixeira correta</h1>
+          <p>
+            Escolha a lixeira correta para cada resíduo apresentado na tela e nos ajude a preservar a natureza.<br><br>Vamos brincar?
+          </p>
+          <a class="buttonquiz1" href="Quiz1/inicio.html">Iniciar quiz</a>         
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-2"></div>
+
+    <!-- QUIZ2 == -->
+    <section class="section" id="quiz2">
+      <div class="container grid">
+        <div class="image">
+          <img
+            src="https://lumackembalagens.com.br/uploads/imagens/thumbs/como-e-porque-separar-o-lixo-22-02-2018-11-04-680-600.jpg"
+            alt="lixeiras coloridas de reciclável" />
+        </div>
+        <div class="text">
+          <h2 class="title">Quiz: Quem sou eu?</h2>
+          <p>
+            Vamos testar seus conhecimentos sobre a história de cada resíduo. Tente acertar de qual resíduo são as
+            caracteristicas indicadas.<br><br>Vamos brincar?<br><br>
+          </p>
+          <a class="buttonquiz2" href="Quiz2/inicio2.html">Iniciar quiz</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-1"></div>
+
+    <!-- QUIZ3 -->
+    <section class="section" id="quiz3">
+      <div class="container grid">
+        <div class="image">
+          <img src="https://www.discolm.pl/wp-content/uploads/2021/06/Rejestr-BDO-768x523.jpg"
+            alt="lixeiras coloridas de coleta seletiva" />
+        </div>
+        <div class="text">
+          <h1 class="title">Quiz: É Reciclável ou Não Reciclável?</h1>
+
+          <p>
+            Você sabia que nem todos os materias são recicláveis devido a sua composição?
+            Alguns exemplos são fotografias, isopor, espelhos, prego, grampos, entre outros.<br><br>Informe se o produto
+            informado na tela é Reciclável ou Não Reciclável.<br><br>Vamos brincar?
+          </p>
+          <a class="buttoni" href="Quiz3/inicio3.html">Iniciar quiz</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    </div>
+    </div>
+    </section>
+
+  </main>
+
+  <footer class="section">
+    <div class="container grid">
+      <div class="brand">
+        <a class="logo logo-alt" href="#home">Recicle<span>fácil</span>.</a>
+      </div>
+
+
+      <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+      <!-- swiper -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- scrollreveal -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+      <!-- main.js -->
+      <script src="main.js"></script>
+</body>
+
+</html>
