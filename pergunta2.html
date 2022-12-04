@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="game3.css"/> 
+    <link rel="icon" type="image/png" href="imgQuiz3/reciclavel.png">
+    <title>É reciclável ou não?</title>   
+</head>
+
+<body>    
+        <header>
+            <button class="titulo">É reciclável ou não?</button>
+            
+        </header>
+    
+        <main>
+
+            <section>
+                <img class="imagem" src="imgQuiz3/garrafa.png" alt="Imagem de caixa de leite">
+            </section>
+               
+    
+            <section>
+                <button id="question" class="pergunta">Garrafa PET</button>
+                
+            </section>
+
+            <div id="myModal" class="modal">
+
+                <!-- Alerta modal icorreto-->
+                <div id="modal-content" class="modal-content">
+                  <div id="modal-header" class="modal-header">
+                    <span class="close">&times;</span>          
+                  </div>
+                  <div class="modal-body"> 
+                    <div class="text">         
+                    <h2 id="titulo-modal" class="title">Resposta Incorreta</h2>
+                    <p id="paragrafo-modal" class="subtitle">         
+                    Ops, esta lixeira não é o descarte adequado.
+                   </p>          
+                  </div>
+                  <div id="modal-footer" class="modal-footer">
+                  </div>
+                </div>
+               </div>
+              </div>
+    
+           
+                        <div class="lixeiras">
+    
+                <div class="choice-container">
+                    <p id="opcao1" class="choice-prefix" data-number="1">RECICLÁVEL<img class="icones_tamanho" src="imgQuiz3/reciclavel.png" alt="Ícone de vidro" data-number="1"></p>
+                    <p class="choice-text">Choice</p>
+                </div>
+    
+                <div class="choice-container">
+                    <p id="opcao2" class="choice-prefix" data-number="2">NÃO<br> RECICLÁVEL<img class="icones_tamanho" src="imgQuiz3/naoreciclavel.png" alt="Ícone de papel" data-number="2"></p>
+                    <p class="choice-text">Choice 2</p>
+                </div>
+    
+                    
+            </div>         
+                           
+    
+            </section>
+    
+    
+        </main>
+    
+        <footer>
+            <a class="rodape" href="../index.html">VOLTAR AO INÍCIO</a>
+        </footer>
+    
+    
+        <script type="text/javascript">
+
+
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var opc = document.getElementById("opcao1");
+            var opc2 = document.getElementById("opcao2");
+            
+            
+            var modalHeader = document.getElementById("modal-header")
+            var modalFooter = document.getElementById("modal-footer")
+            var paragrafoModal = document.getElementById("paragrafo-modal")
+            var tituloModal = document.getElementById("titulo-modal")
+            var modalContent = document.getElementById("modal-content")
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            opc.onclick = function() {
+              modal.style.display = "block";
+              modalContent.style.border = "8px solid green";
+              tituloModal.innerText = "Parabéns, você acertou!"
+              tituloModal.style.color = "green";
+              paragrafoModal.innerText = "Eu sou um produto reciclável."
+            }
+            
+            opc2.onclick = function() {
+              modal.style.display = "block";
+              modalContent.style.border = "8px solid #D30000";
+              tituloModal.innerText = "Resposta Incorreta"
+              tituloModal.style.color = "#D30000";
+              paragrafoModal.innerText = "Ops, eu sou um produto reciclável."
+            }
+            
+            
+            
+            // When the user clicks on <span> (x), close the modal
+              span.onclick = function() {
+              modal.style.display = "none";
+              novaPagina();
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+               modal.style.display = "none";
+               novaPagina();
+              }
+            }
+            
+            novaPagina = () => {
+                        return window.location.assign('pergunta3.html')
+            
+                }
+            
+            
+            
+                   
+            
+             </script>
+    
+        
+    </body>
+    
+    </html>
