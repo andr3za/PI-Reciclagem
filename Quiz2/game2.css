@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+body{
+    height: 100%;
+    font-size: 100%;
+    background-image: url(../Quiz2/imgQuiz2/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.titulo{
+    font-family: 'Coming Soon', cursive;
+    font-size: 38px;
+    margin: 70px;
+    margin-top: 80px;
+    height: 200px;
+    width: 700px;
+    border-radius: 18px;
+    background-color: #FDF9F6;
+    border: 1px solid #B5B0A0;
+}
+
+.imagem{
+    height: 180px;
+    width: 180px;
+    margin-top: 3rem;
+}
+
+.pergunta{
+    font-family: 'Coming Soon', cursive;
+    font-size: 30px;
+    margin: 25px;
+    height: 95px;
+    width: 280px;
+    border-radius: 18px;
+    background-color: #FDF9F6;
+    border: 1px solid #B5B0A0;
+}
+
+.choice-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;    
+
+}
+
+.lixeiras{    
+    display: flex;
+}
+
+
+
+.choice-prefix{
+    font-family: 'Coming Soon', cursive;
+    font-size: 25px;
+    margin: 50px 40px 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 120px;
+    width: 300px;
+    border-radius: 18px;
+    background-color: #FDF9F6;
+    border: 1px solid #B5B0A0;
+    margin-top: 10rem;
+}
+
+.icones_tamanho{
+    height: 100px;    
+}
+
+.choice-prefix:hover{
+    border: 5px solid #aaa492;
+    cursor: pointer;
+}
+
+/* Aqui são as 'Choices' 1,2,etc estão escondidas*/
+.choice-text{
+font-size: 12px;
+display: none;
+visibility: hidden;
+}
+
+.correct{
+    background-color: green;    
+}
+
+.incorrect{
+    background-color: red;
+}
+
+.rodape{
+    margin-top: 20%;
+    font-family: 'Coming Soon', cursive;
+    font-size: 18px;  
+
+  }
+
+ 
+.rodape:hover{
+    text-decoration: underline;
+}
+
+    
+#progressBar{
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11, 223, 36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+    position: absolute; left: 8%; bottom: 76%;    
+}
+
+#progressBarFull{
+    height: 100%;
+    background: rgb(11, 223, 36);
+    width: 0%;    
+
+}
+
+#progressText{
+    font-size: 30px;    
+    position: absolute; left: -55%; bottom: 82%;    
+}
+
+.hud-prefix{
+    font-size: 30px;
+    margin-top: 2rem;
+    position: absolute; right: 16.5%; bottom: 80%;
+    font-family: 'Coming Soon', cursive;
+    
+}
+
+#score{
+    font-size: 40x;
+    margin-top: 2rem;
+    position: absolute; right: 20%; bottom: 75%;
+    font-family: 'Coming Soon', cursive;
+}
+
+
+.header{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .choice-container{
+        min-width: 40rem;
+    }
+}
